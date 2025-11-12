@@ -32,7 +32,7 @@ interface IConfigurationProps {
   ) => void;
 }
 
-type Mapping = 'pathname' | 'url' | 'title' | 'og:title' | 'specific' | 'number';
+type Mapping = 'pathname' | 'url' | 'title' | 'og:title' | 'giscus:page-id' | 'specific' | 'number';
 
 interface IConfig {
   repository: string;
@@ -70,6 +70,11 @@ const mappingOptions: Array<{
     value: 'og:title',
     label: 'titleContainsOgTitle',
     description: 'titleContainsOgTitleDesc',
+  },
+  {
+    value: 'giscus:page-id',
+    label: 'titleContainsGiscusPageId',
+    description: 'titleContainsGiscusPageIdDesc',
   },
   {
     value: 'specific',

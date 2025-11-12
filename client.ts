@@ -63,6 +63,9 @@
     case 'og:title':
       params.term = getMetaContent('title', true);
       break;
+    case 'giscus:page-id':
+      params.term = getMetaContent('giscus:page-id');
+      break;
     case 'specific':
       params.term = attributes.term as string;
       break;

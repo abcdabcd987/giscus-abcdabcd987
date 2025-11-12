@@ -25,6 +25,8 @@
   "titleContainsTitleDesc": "giscus will search for a discussion whose title contains the page's <code><title></code> HTML tag.",
   "titleContainsOgTitle": "Discussion title contains page <code>og:title</code>",
   "titleContainsOgTitleDesc": "giscus will search for a discussion whose title contains the page's  <aOgTitle><code><meta property=\"og:title\"></code></aOgTitle> HTML tag.",
+  "titleContainsGiscusPageId": "Discussion title contains page <code>giscus:page-id</code>",
+  "titleContainsGiscusPageIdDesc": "giscus will search for a discussion whose title contains the page's <code><meta name=\"giscus:page-id\"></code> HTML tag.",
   "titleContainsSpecificTerm": "Discussion title contains a specific term",
   "titleContainsSpecificTermDesc": "giscus will search for a discussion whose title contains a specific term.",
   "enterTermHere": "Enter term here",

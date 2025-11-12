@@ -1,7 +1,7 @@
 (function () {
   const GISCUS_SESSION_KEY = 'giscus-session';
   const script = document.currentScript as HTMLScriptElement;
-  const giscusOrigin = new URL(script.src).origin;
+  const giscusOrigin = 'https://giscus.app';
 
   function formatError(message: string) {
     return `[giscus] An error occurred. Error message: "${message}".`;
@@ -50,8 +50,9 @@
   params.category = attributes.category || '';
   params.categoryId = attributes.categoryId as string;
   params.strict = attributes.strict || '0';
-  params.description = getMetaContent('description', true);
+  // params.description = getMetaContent('description', true);
   params.backLink = getMetaContent('giscus:backlink') || cleanedLocation;
+  params.backLink = params.backLink.replace(',', '\n');
 
   switch (attributes.mapping) {
     case 'url':
